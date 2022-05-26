@@ -21,6 +21,10 @@ const Navbar = () => {
             fontFamily: "inter",
             fontSize: "15px",
             fontWeight: 600,
+            ":hover": {
+              borderColor: "#1b5e20",
+              boxShadow: "2px 6px black",
+            },
           }}
         >
           <Link style={{ textDecoration: "none", color: "black"}} to="/">
@@ -37,11 +41,15 @@ const Navbar = () => {
             fontFamily: "inter",
             fontSize: "15px",
             fontWeight: 600,
+            ":hover": {
+              borderColor: "#1b5e20",
+              boxShadow: "2px 6px black",
+            },
           }}
         >
           <Link style={{ textDecoration: "none", color: "black"}} to="/skills">
           
-            Skills & lenguaje
+            Skills & lenguajes
           </Link>
           
         </Button>
@@ -54,6 +62,10 @@ const Navbar = () => {
             fontFamily: "inter",
             fontSize: "15px",
             fontWeight: 600,
+            ":hover": {
+              borderColor: "#1b5e20",
+              boxShadow: "2px 6px black",
+            },
           }}
         >
           <Link style={{ textDecoration: "none", color: "black"}} to="/proyectos">
@@ -70,6 +82,10 @@ const Navbar = () => {
             fontFamily: "inter",
             fontSize: "15px",
             fontWeight: 600,
+            ":hover": {
+              borderColor: "#1b5e20",
+              boxShadow: "2px 6px black",
+            },
           }}
         >
            <Link style={{ textDecoration: "none", color: "black"}} to="/contacto">
