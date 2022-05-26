@@ -1,62 +1,66 @@
-import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardActions from "@mui/material/CardActions";
+import CardMedia from "@mui/material/CardMedia";
 import IconButton from "@mui/material/IconButton";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import bit1 from "../img/bit1.jpg";
+import bit2 from "../img/bit2.jpg";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
     <Box>
-      <AppBar position="static" elevation={0} sx={{ bgcolor: "white" }}>
-        <Toolbar
-          sx={{
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "right",
-          }}
-        >
-          <Button variant="text" sx={{ color: "black", textTransform: "none", fontFamily: "Inter", fontStyle: 'normal', fontWeight: 'normal'}}>
-            ¿Quién soy?
-          </Button>
-          <Button variant="text" sx={{ color: "black", textTransform: "none" }}>
-            Skills & lenguaje
-          </Button>
-          <Button variant="text" sx={{ color: "black", textTransform: "none" }}>
-            Proyectos
-          </Button>
-          <Button variant="text" sx={{ color: "black", textTransform: "none" }}>
-            Contactame
-          </Button>
-        </Toolbar>
-      </AppBar>
+      
 
       <Box>
         <Card
           elevation={0}
           sx={{ display: "flex", flexDirection: "column", mt: "180px", ml: 6 }}
         >
-          <CardContent>
-            <Typography>Hola! Soy Zuri H. Ruiz</Typography>
-            <Typography>
-              Front end Developer, fanática de la música y el cine.
-            </Typography>
-          </CardContent>
-          
-            <CardActions disableSpacing>
-              <IconButton sx={{color: "black"}}>
-                <LinkedInIcon  sx={{ fontSize: 30 }}/>
-              </IconButton>
-              <IconButton sx={{color: "black"}}>
-                <GitHubIcon sx={{ fontSize: 30 }}/>
-              </IconButton>
-            </CardActions>
-          
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "center",
+            }}
+          >
+            <CardContent>
+              <Typography
+                sx={{ fontFamily: "inter", fontSize: "40px", fontWeight: 600 }}
+              >
+                Hola! Soy Zuri H. Ruiz
+              </Typography>
+              <Typography
+                sx={{
+                  fontFamily: "inter",
+                  fontSize: "18px",
+                  color: "#929292",
+                  fontWeight: 500,
+                }}
+              >
+                Front end Developer, fanática de la música y el cine.
+              </Typography>
+
+              <CardActions disableSpacing sx={{display: "flex", justifyContent: "left", ml: -2}}>
+                <IconButton href="https://www.linkedin.com/in/zuri-h-ruiz-b7255a149/" target="_blank" sx={{ color: "black" }}>
+                  <LinkedInIcon sx={{ fontSize: 30 }} />
+                </IconButton>
+                <IconButton href="https://github.com/ZuriRuiz" target="_blank" sx={{ color: "black" }}>
+                  <GitHubIcon sx={{ fontSize: 30 }} />
+                </IconButton>
+              </CardActions>
+            </CardContent>
+            
+            <CardMedia
+              component="img"
+              image={bit2}
+              sx={{ width: 500, mr: 15 }}
+            />
+          </Box>
         </Card>
       </Box>
     </Box>
