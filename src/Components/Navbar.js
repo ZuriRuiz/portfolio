@@ -23,7 +23,7 @@ const Navbar = () => {
             fontWeight: 600,
             ":hover": {
               borderColor: "#1b5e20",
-              boxShadow: "2px 6px black",
+              boxShadow: "2px 4px black",
             },
           }}
         >
@@ -43,7 +43,7 @@ const Navbar = () => {
             fontWeight: 600,
             ":hover": {
               borderColor: "#1b5e20",
-              boxShadow: "2px 6px black",
+              boxShadow: "2px 4px black",
             },
           }}
         >
@@ -64,7 +64,7 @@ const Navbar = () => {
             fontWeight: 600,
             ":hover": {
               borderColor: "#1b5e20",
-              boxShadow: "2px 6px black",
+              boxShadow: "2px 4px black",
             },
           }}
         >
@@ -84,7 +84,7 @@ const Navbar = () => {
             fontWeight: 600,
             ":hover": {
               borderColor: "#1b5e20",
-              boxShadow: "2px 6px black",
+              boxShadow: "2px 4px black",
             },
           }}
         >
