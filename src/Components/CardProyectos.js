@@ -12,7 +12,7 @@ const CardProyectos = (props) => {
   return (
     <Box>
     
-        <Card sx={{ width: 500, height: 300, bgcolor: "black", color: "white",}}>
+        <Card sx={{ width: 600, height: 400, bgcolor: "black", color: "white" }}>
           <CardContent>
             <Typography sx={{fontFamily: "inter",}}>{props.titulo}</Typography>
             <Typography sx={{fontFamily: "inter",  mt: 2}}>{props.previewProyecto}</Typography>
