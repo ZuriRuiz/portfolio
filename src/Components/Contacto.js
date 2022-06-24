@@ -10,7 +10,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 const Contacto = () => {
   return (
     <Box sx={{ display: "flex", flexDirection: "row", m: 4, height: 380 }}>
-      <Card sx={{ width: 400 }}>
+      <Card sx={{ width: 400, borderColor: "#929292" }}>
         <CardContent>
           <Typography
             sx={{ fontFamily: "inter", fontSize: "32px", fontWeight: 600 }}
@@ -31,15 +31,15 @@ const Contacto = () => {
             sx={{
               mt: 10,
               fontFamily: "inter",
-              fontSize: "40px",
+              fontSize: "30px",
               fontWeight: 600,
             }}
           >
-            correo@correo
+            freyahr@gmail.com
           </Typography>
           <CardActions
             disableSpacing
-            sx={{ display: "flex", justifyContent: "left", ml: -2 }}
+            sx={{ display: "flex", justifyContent: "left", ml: -2, mt: 10}}
           >
             <IconButton
               href="https://www.linkedin.com/in/zuri-h-ruiz-b7255a149/"
