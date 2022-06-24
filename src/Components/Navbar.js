@@ -1,7 +1,9 @@
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import Button from "@mui/material/Button";
-import { Link } from "react-router-dom"
+import { Box } from "@mui/material";
+import { Link } from "react-router-dom";
+import MenuH from "./MenuH";
 
 const Navbar = () => {
   return (
@@ -13,86 +15,109 @@ const Navbar = () => {
           justifyContent: "right",
         }}
       >
-        <Button
-          variant="text"
+        <Box
           sx={{
-            color: "black",
-            textTransform: "none",
-            fontFamily: "inter",
-            fontSize: "15px",
-            fontWeight: 600,
-            ":hover": {
-              borderColor: "#1b5e20",
-              boxShadow: "2px 4px black",
+            display: {
+              xs: "none",
+              sm: "none",
+              md: "inline",
             },
           }}
         >
-          <Link style={{ textDecoration: "none", color: "black"}} to="/">
-          
-            ¿Quién soy?
-          </Link>
+          <Button
+            variant="text"
+            sx={{
+              color: "black",
+              textTransform: "none",
+              fontFamily: "inter",
+              fontSize: "15px",
+              fontWeight: 600,
+              ":hover": {
+                borderColor: "#1b5e20",
+                boxShadow: "2px 4px black",
+              },
+            }}
+          >
+            <Link style={{ textDecoration: "none", color: "black" }} to="/">
+              ¿Quién soy?
+            </Link>
+          </Button>
+          <Button
+            variant="text"
+            sx={{
+              color: "black",
+              textTransform: "none",
+              fontFamily: "inter",
+              fontSize: "15px",
+              fontWeight: 600,
+              ":hover": {
+                borderColor: "#1b5e20",
+                boxShadow: "2px 4px black",
+              },
+            }}
+          >
+            <Link
+              style={{ textDecoration: "none", color: "black" }}
+              to="/skills"
+            >
+              Skills & lenguajes
+            </Link>
+          </Button>
 
-        </Button>
-        <Button
-          variant="text"
+          <Button
+            variant="text"
+            sx={{
+              color: "black",
+              textTransform: "none",
+              fontFamily: "inter",
+              fontSize: "15px",
+              fontWeight: 600,
+              ":hover": {
+                borderColor: "#1b5e20",
+                boxShadow: "2px 4px black",
+              },
+            }}
+          >
+            <Link
+              style={{ textDecoration: "none", color: "black" }}
+              to="/proyectos"
+            >
+              Proyectos
+            </Link>
+          </Button>
+          <Button
+            variant="text"
+            sx={{
+              color: "black",
+              textTransform: "none",
+              fontFamily: "inter",
+              fontSize: "15px",
+              fontWeight: 600,
+              ":hover": {
+                borderColor: "#1b5e20",
+                boxShadow: "2px 4px black",
+              },
+            }}
+          >
+            <Link
+              style={{ textDecoration: "none", color: "black" }}
+              to="/contacto"
+            >
+              Contactame
+            </Link>
+          </Button>
+        </Box>
+        <Box
           sx={{
-            color: "black",
-            textTransform: "none",
-            fontFamily: "inter",
-            fontSize: "15px",
-            fontWeight: 600,
-            ":hover": {
-              borderColor: "#1b5e20",
-              boxShadow: "2px 4px black",
+            display: {
+              xs: "inline",
+              sm: "inline",
+              md: "none",
             },
           }}
         >
-          <Link style={{ textDecoration: "none", color: "black"}} to="/skills">
-          
-            Skills & lenguajes
-          </Link>
-          
-        </Button>
-        
-        <Button
-          variant="text"
-          sx={{
-            color: "black",
-            textTransform: "none",
-            fontFamily: "inter",
-            fontSize: "15px",
-            fontWeight: 600,
-            ":hover": {
-              borderColor: "#1b5e20",
-              boxShadow: "2px 4px black",
-            },
-          }}
-        >
-          <Link style={{ textDecoration: "none", color: "black"}} to="/proyectos">
-          
-          Proyectos
-        </Link>
-          
-        </Button>
-        <Button
-          variant="text"
-          sx={{
-            color: "black",
-            textTransform: "none",
-            fontFamily: "inter",
-            fontSize: "15px",
-            fontWeight: 600,
-            ":hover": {
-              borderColor: "#1b5e20",
-              boxShadow: "2px 4px black",
-            },
-          }}
-        >
-           <Link style={{ textDecoration: "none", color: "black"}} to="/contacto">
-          
-          Contactame
-        </Link>
-        </Button>
+          <MenuH />
+        </Box>
       </Toolbar>
     </AppBar>
   );
